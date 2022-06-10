@@ -29,10 +29,9 @@ let ingreso = prompt(
         break;
 }
 
-let talle = i = 39; i <= 45; i++;
 function elegirTalle () {
   let talle = parseInt(prompt("Elegir talle, solo hay disponibles del 39 a 45"));
-  if (talle > 45 )
+  if (talle >45||talle<39)
   alert("No hay talle disponible, disculpe las molestias");
   else {
     alert("Hay stock, selecciono talle " + talle +  ", que lo disfrute");
