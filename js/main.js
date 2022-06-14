@@ -1,18 +1,13 @@
 //Simulador de tienda de botines
 function SolicitarNombre() {
     alert("Bienvenido a la tienda de botines");
-    let nombre = prompt("Ingrese su nombre")
+    let nombre = prompt("Ingrese su nombre");
     while (nombre === "") {
       nombre = prompt("Ingrese su nombre");
     }
     return nombre;
 }
 SolicitarNombre();
-
-const productos = [{ id:1, producto: "Puma"},
-                  { id:2, producto: "Nike"},
-                  { id:3, producto: "Adidas"},
-                  { id:4, producto: "Umbro"}];
 
 let ingreso = prompt(
   "Selecciona una marca \n 1-Puma \n 2-Nike \n 3-Adidas \n 4-Umbro");
@@ -45,3 +40,15 @@ function elegirTalle () {
 }
 
 elegirTalle ();
+
+const productos = [{ id:1, producto: "Puma", precio: "precio del producto " + 15000},
+                  { id:2, producto: "Nike", precio: "precio del producto " + 18000},
+                  { id:3, producto: "Adidas",precio: "precio del producto " + 19000},
+                  { id:4, producto: "Umbro", precio: "precio del producto " + 11000}
+];
+
+for (const producto of productos) {
+  console.log(producto.id);
+  console.log(producto.producto);
+  console.log(producto.precio);
+}
