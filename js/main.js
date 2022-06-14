@@ -9,11 +9,16 @@ function SolicitarNombre() {
 }
 SolicitarNombre();
 
+const productos = [{ id:1, producto: "Puma"},
+                  { id:2, producto: "Nike"},
+                  { id:3, producto: "Adidas"},
+                  { id:4, producto: "Umbro"}];
+
 let ingreso = prompt(
   "Selecciona una marca \n 1-Puma \n 2-Nike \n 3-Adidas \n 4-Umbro");
     switch (ingreso) {
       case "1":
-        alert("Seleccionaste Puma");
+        alert("Seleccionaste puma");
         break;
       case "2":
         alert("Seleccionaste Nike");
